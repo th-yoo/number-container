@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lit Context Demo</title>
+		<script type="module" src="/src/number-container.ts"></script>
+		<script type="module" src="/src/sl-num-container.ts"></script>
+		<script type="module" src="/src/x-display.ts"></script>
+		<style>
+			body {
+				display: flex;
+				gap: 8px;
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<number-container>
+			<x-display></x-display>
+		</number-container>
+
+		<number-container>
+			<x-display color="red"></x-display>
+		</number-container>
+
+		<sl-num-container>
+			<x-display color="green"></x-display>
+		</sl-num-container>
+		<sl-num-container>
+			<x-display color="magenta"></x-display>
+		</sl-num-container>
+	</body>
+</html>
